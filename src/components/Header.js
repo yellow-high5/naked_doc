@@ -1,15 +1,16 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
+import React from 'react';
 import GitHubButton from 'react-github-btn';
-import Link from './link';
 import Loadable from 'react-loadable';
 
 import config from '../../config.js';
-import LoadingProvider from './mdxComponents/loading';
 import { DarkModeSwitch } from './DarkModeSwitch';
+import Link from './link';
+import LoadingProvider from './mdxComponents/loading';
+import Sidebar from './sidebar';
 
-const help = require('./images/help.svg');
+const help = require('./static/images/help.svg');
 
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
 
@@ -22,8 +23,6 @@ if (isSearchEnabled && config.header.search.indexName) {
     hitComp: `PageHit`,
   });
 }
-
-import Sidebar from './sidebar';
 
 const LoadableComponent = Loadable({
   loader: () => import('./search/index'),
@@ -62,7 +61,6 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
             headerTitle
             githubUrl
             helpUrl
-            tweetText
             logo {
               link
               image
@@ -76,21 +74,15 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       }
     `}
     render={data => {
-      const logoImg = require('./images/logo.svg');
-
-      const twitter = require('./images/twitter.svg');
-
-      const discordBrandsBlock = require('./images/discord-brands-block.svg');
-
-      const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
+      const logoImg = require('./static/images/logo.svg');
 
       const {
         site: {
-          siteMetadata: { headerTitle, githubUrl, helpUrl, tweetText, logo, headerLinks },
+          siteMetadata: { headerTitle, githubUrl, helpUrl, logo, headerLinks },
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
+      const finalLogoLink = logo.link !== '' ? logo.link : 'http://localhost:8000/';
 
       return (
         <div className={'navBarWrapper'}>
@@ -148,20 +140,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   </li>
                 ) : null}
 
-                {tweetText !== '' ? (
-                  <li>
-                    <a
-                      href={'https://twitter.com/intent/tweet?&text=' + tweetText}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
-                    </a>
-                  </li>
-                ) : null}
-                {tweetText !== '' || githubUrl !== '' ? (
-                  <li className="divider hiddenMobile"></li>
-                ) : null}
+                {githubUrl !== '' ? <li className="divider hiddenMobile"></li> : null}
                 {config.header.social ? (
                   <li className={'hiddenMobile'}>
                     <ul

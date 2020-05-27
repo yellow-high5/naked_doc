@@ -1,9 +1,9 @@
-import React from 'react';
-import Tree from './tree';
-import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
-import { ExternalLink } from 'react-feather';
+import { graphql, StaticQuery } from 'gatsby';
+import React from 'react';
+
 import config from '../../../config';
+import Tree from './tree';
 
 // eslint-disable-next-line no-unused-vars
 const ListItem = styled(({ className, active, level, ...props }) => {
@@ -117,17 +117,6 @@ const SidebarLayout = ({ location }) => (
           ) : null}
           <ul className={'sideBarUL'}>
             <Tree edges={allMdx.edges} />
-            {config.sidebar.links && config.sidebar.links.length > 0 && <Divider />}
-            {config.sidebar.links.map((link, key) => {
-              if (link.link !== '' && link.text !== '') {
-                return (
-                  <ListItem key={key} to={link.link}>
-                    {link.text}
-                    <ExternalLink size={14} />
-                  </ListItem>
-                );
-              }
-            })}
           </ul>
         </Sidebar>
       );

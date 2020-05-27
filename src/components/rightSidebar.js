@@ -1,10 +1,10 @@
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+
+import config from '../../config';
+import { ListItem, Sidebar } from './static/styles/Sidebar';
 
 // import Link from './link';
-import config from '../../config';
-import { Sidebar, ListItem } from './styles/Sidebar';
-
 const SidebarLayout = ({ location }) => (
   <StaticQuery
     query={graphql`

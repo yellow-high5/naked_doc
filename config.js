@@ -1,36 +1,22 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'http://localhost:8000/',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
-    title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+    logo:
+      'https://user-images.githubusercontent.com/14067398/83020350-51a20300-a063-11ea-9207-0d33a69344f1.png',
+    logoLink: 'http://localhost:8000/',
+    title: '',
+    githubUrl: 'https://github.com/yellow-high5/naked_doc',
     helpUrl: '',
-    tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+    social: ``,
     links: [{ text: '', link: '' }],
     search: {
-      enabled: false,
-      indexName: '',
+      enabled: true,
+      indexName: 'INDEX_NAME',
       algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
       algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
       algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
@@ -38,38 +24,49 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/introduction',
+      '/intro-to-graphql',
+      '/setup',
+      '/apollo-client',
+      '/queries',
+      '/mutations-variables',
+      '/optimistic-update-mutations',
+      '/subscriptions',
+      '/realtime-feed',
+      '/what-next',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      '/intro-to-graphql',
+      '/queries',
+      '/mutations-variables',
+      '/optimistic-update-mutations',
+      '/subscriptions',
+      '/realtime-feed',
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
     frontline: false,
     ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    title: '',
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'Naked Doc | Simple startup document',
+    description: 'Documentation built with Powering GatsbyJS. ',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    docsLocation: 'https://github.com/yellow-high5/naked_doc/tree/master/content',
+    favicon: 'src/components/images/logo.svg',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Gatsby Gitbook Starter',
-      short_name: 'GitbookStarter',
+      name: 'Naked Doc | Simple documentation template',
+      short_name: 'Naked Doc',
       start_url: '/',
-      background_color: '#6b37bf',
-      theme_color: '#6b37bf',
+      background_color: '#001934',
+      theme_color: '#001934',
       display: 'standalone',
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'src/pwa-512.png',
+          src: 'src/components/images/pwa-512.png',
           sizes: `512x512`,
           type: `image/png`,
         },

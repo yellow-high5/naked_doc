@@ -1,8 +1,8 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 
-import NightImage from './images/night.png';
-import DayImage from './images/day.png';
+import DayImage from './static/images/day.png';
+import NightImage from './static/images/night.png';
 
 const StyledSwitch = styled('div')`
   display: flex;

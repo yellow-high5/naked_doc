@@ -1,8 +1,9 @@
 import React from 'react';
-import OpenedSvg from '../images/opened';
-import ClosedSvg from '../images/closed';
+
 import config from '../../../config';
 import Link from '../link';
+import ClosedSvg from '../static/images/closed';
+import OpenedSvg from '../static/images/opened';
 
 const TreeNode = ({ className = '', setCollapsed, collapsed, url, title, items, ...rest }) => {
   const isCollapsed = collapsed[url];
