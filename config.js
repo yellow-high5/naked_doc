@@ -7,7 +7,7 @@ const config = {
   },
   header: {
     logo:
-      'https://user-images.githubusercontent.com/14067398/83020350-51a20300-a063-11ea-9207-0d33a69344f1.png',
+      'https://github.com/yellow-high5/naked_doc/blob/master/src/components/static/images/header-logo.png?raw=true',
     logoLink: 'http://localhost:8000/',
     title: '',
     githubUrl: 'https://github.com/yellow-high5/naked_doc',
@@ -52,7 +52,8 @@ const config = {
     description: 'Documentation built with Powering GatsbyJS. ',
     ogImage: null,
     docsLocation: 'https://github.com/yellow-high5/naked_doc/tree/master/content',
-    favicon: 'src/components/images/logo.svg',
+    favicon:
+      'https://raw.githubusercontent.com/yellow-high5/naked_doc/2f2b975840282dc9b997047e258491875c82c469/src/components/static/images/logo.svg',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.

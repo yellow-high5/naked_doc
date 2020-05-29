@@ -24,21 +24,53 @@ $ docker run -p 8080:8000 naked_doc:1.0
 
 ## 🔧Configure
 
-### 1. Header Logo
+Naked Doc roughly consists of three elements, header, sidebar, content.  
+Edit the config.js file and it will be your favorite document in no time.
 
-### 2. Doc Search Engine([Algolia](https://www.algolia.com/))
+![image](https://user-images.githubusercontent.com/14067398/83048486-9db16f80-a084-11ea-8b13-08a619456d3c.png)
+
+### 1. Header
+
+You can embed any social link in the document header. (ex: Github, Twitter...)
+
+#### Logo
+
+You edit `config.header.logo` in config.js
+
+If you want the link to be accessible when you click on the logo, you edit `config.header.logoLink` in config.js
+
+#### Search Engine([Algolia](https://www.algolia.com/))
+
+You edit `config.header.search` and describe `.env` file about Algolia API Keys. You can get API Keys from Algolia Dashboard.
+
+After that, you should command `npm run build` to push document content data.
+
+### 2. Sidebar
+
+If you control the order of sections in the document, edit `config.sidebar.forcedNavOrder`.
+
+If you want to control whether sections of the document are collapsed, edit `config.sidebar.collapsedNav`.
 
 ### 3. Markdown Content
 
-#### Index
+Please put the markdown file that describes the document in the `content` folder.
+If you want to create a section, create a folder in the `content` folder.
 
-#### Edit this page link
+#### Edit this page
 
-#### React Component(MDX)
+![image](https://user-images.githubusercontent.com/14067398/83247192-25f75800-a1de-11ea-9024-fafe4aa6c428.png)
+
+Naked Doc can access source repository link from document, so you edit `config.siteMetadata.docsLocation` in config.js.
+
+#### React Component([MDX](https://mdxjs.com/))
+
+MDX is a great format to embed JSX in Markdown and makes the document richer
+
+You store the JSX component you want to insert in Markdown in `src/components/docParts` folder and import it with mdx to use it.
 
 ## ⚡️Deploy
 
-### Github Pages
+You check [Deploying and Hosting | GatsbyJS](https://www.gatsbyjs.org/docs/deploying-and-hosting/)
 
 ## Thanks OSS and the Predecessor!
 

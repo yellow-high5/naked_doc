@@ -1,5 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+
 import config from '../config';
 
 export default class HTML extends React.Component {
@@ -17,6 +18,7 @@ export default class HTML extends React.Component {
           {config.siteMetadata.ogImage ? (
             <meta property="twitter:image" content={config.siteMetadata.ogImage} />
           ) : null}
+          <title>{config.siteMetadata.title}</title>
           {config.siteMetadata.favicon ? (
             <link rel="shortcut icon" type="image/svg" href={config.siteMetadata.favicon} />
           ) : null}

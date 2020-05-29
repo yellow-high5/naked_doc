@@ -8,7 +8,7 @@ class NotFound extends React.Component {
         <p className={'paragraph'}>
           Oops! The page you are looking for has been removed or relocated.
         </p>
-        <img src="https://user-images.githubusercontent.com/14067398/83032878-5a99d100-a071-11ea-8f43-14848cd3b62b.png" />
+        <img src="https://github.com/yellow-high5/naked_doc/blob/master/src/components/static/images/404.png?raw=true" />
       </div>
     );
   }
