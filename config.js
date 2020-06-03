@@ -1,14 +1,14 @@
 const config = {
   gatsby: {
-    pathPrefix: '/',
-    siteUrl: 'http://localhost:8000/',
+    pathPrefix: '/naked_doc',
+    siteUrl: 'https://yellow-high5.github.io/naked_doc/',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
     logo:
       'https://github.com/yellow-high5/naked_doc/blob/master/src/components/static/images/header-logo.png?raw=true',
-    logoLink: 'http://localhost:8000/',
+    logoLink: 'https://yellow-high5.github.io/naked_doc/',
     title: '',
     githubUrl: 'https://github.com/yellow-high5/naked_doc',
     helpUrl: '',

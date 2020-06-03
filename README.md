@@ -6,6 +6,9 @@ Let's create your document!
 
 ![nake_logo_header](https://user-images.githubusercontent.com/14067398/83019721-63cf7180-a062-11ea-894f-3c3e9c5a566f.png)
 
+↓Here is sample document about GraphQL
+https://yellow-high5.github.io/naked_doc/
+
 ## 🚀QuickStart
 
 ### Local Development
