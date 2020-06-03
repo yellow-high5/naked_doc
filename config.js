@@ -53,7 +53,7 @@ const config = {
     ogImage: null,
     docsLocation: 'https://github.com/yellow-high5/naked_doc/tree/master/content',
     favicon:
-      'https://raw.githubusercontent.com/yellow-high5/naked_doc/b2c80ec4028067363dee135b59ddad1842ca8a04/src/components/static/images/logo.svg',
+      'https://raw.githubusercontent.com/yellow-high5/naked_doc/master/src/components/static/images/logo.svg',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
