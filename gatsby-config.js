@@ -48,9 +48,6 @@ const plugins = [
       anonymize: false,
     },
   },
-  {
-    resolve: `gatsby-plugin-typescript`,
-  },
 ];
 // Algoliaの設定
 if (

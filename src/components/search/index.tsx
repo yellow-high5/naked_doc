@@ -1,7 +1,13 @@
 import styled from '@emotion/styled';
 import algoliasearch from 'algoliasearch/lite';
 import React, { createRef, useEffect, useState } from 'react';
-import { Configure, connectStateResults, Hits, Index, InstantSearch } from 'react-instantsearch-dom';
+import {
+  Configure,
+  connectStateResults,
+  Hits,
+  Index,
+  InstantSearch,
+} from 'react-instantsearch-dom';
 import { Search } from 'styled-icons/fa-solid/Search';
 
 import config from '../../../config.ts';
