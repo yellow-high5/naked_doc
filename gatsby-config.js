@@ -1,13 +1,13 @@
 require('dotenv').config();
-const queries = require('./src/utils/algolia');
-const config = require('./config');
+const queries = require('./src/utils/algolia.ts');
+const config = require('./config.ts');
 const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
   {
     resolve: `gatsby-plugin-layout`,
     options: {
-      component: require.resolve(`./src/templates/docs.js`),
+      component: require.resolve(`./src/templates/docs.tsx`),
     },
   },
   'gatsby-plugin-emotion',
@@ -48,6 +48,9 @@ const plugins = [
       anonymize: false,
     },
   },
+  {
+    resolve: `gatsby-plugin-typescript`,
+  },
 ];
 // Algoliaの設定
 if (
@@ -75,7 +78,7 @@ if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
   plugins.push({
     resolve: 'gatsby-plugin-offline',
     options: {
-      appendScript: require.resolve(`./src/custom-sw-code.js`),
+      appendScript: require.resolve(`./src/custom-sw-code.ts`),
     },
   });
 } else {

@@ -4,7 +4,7 @@ metaTitle: 'Set up GraphQL Subscriptions using Apollo Client | GraphQL React Apo
 metaDescription: 'You will learn how to configure GraphQL Subscriptions using React Apollo Client by installing dependencies like apollo-link-ws, subscriptions-transport-ws. This will also have authorization token setup'
 ---
 
-import GithubLink from "../../src/components/docParts/GithubLink.js";
+import GithubLink from "../../src/components/docParts/GithubLink.tsx";
 
 When we had initially set up Apollo, we used Apollo Boost to install the required dependencies. But subscriptions is an advanced use case which Apollo Boost does not support. So we have to install more dependencies to set up subscriptions.
 

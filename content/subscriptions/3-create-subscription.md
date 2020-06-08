@@ -4,7 +4,7 @@ metaTitle: 'Apollo useSubscription React hook | GraphQL React Apollo Hooks Tutor
 metaDescription: 'Integrate React Apollo useSubscription hook to watch for changes in realtime data. We use GraphQL subscriptions as an example to get live data in the React app'
 ---
 
-import GithubLink from "../../src/components/docParts/GithubLink.js";
+import GithubLink from "../../src/components/docParts/GithubLink.tsx";
 
 So let's define the graphql subscription to be used.
 

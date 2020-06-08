@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { MDXProvider } from '@mdx-js/react';
 import React from 'react';
 
-import config from '../../config.js';
+import config from '../../config.ts';
 import mdxComponents from './mdxComponents';
 import RightSidebar from './rightSidebar';
 import Sidebar from './sidebar';

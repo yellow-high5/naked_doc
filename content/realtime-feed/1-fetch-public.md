@@ -4,7 +4,7 @@ metaTitle: 'Fetch public todos using Subscription | GraphQL React Apollo Hooks T
 metaDescription: 'You will learn how to make use of GraphQL Subscriptions to get notified whenever a new todo comes in React app'
 ---
 
-import GithubLink from "../../src/components/docParts/GithubLink.js";
+import GithubLink from "../../src/components/docParts/GithubLink.tsx";
 
 Let's define the graphql query to be used:
 

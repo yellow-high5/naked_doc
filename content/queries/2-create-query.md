@@ -4,7 +4,7 @@ metaTitle: 'Apollo useQuery React hook | GraphQL React Apollo Hooks Tutorial'
 metaDescription: 'We will use the Apollo Client useQuery React hook from @apollo/react-hooks to make GraphQL queries'
 ---
 
-import GithubLink from "../../src/components/docParts/GithubLink.js";
+import GithubLink from "../../src/components/docParts/GithubLink.tsx";
 
 In this section, we will implement GraphQL Queries and integrate with the react UI.
 With Apollo Client, you can send queries in 2 different ways.

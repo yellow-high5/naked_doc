@@ -4,7 +4,7 @@ metaTitle: 'Update last seen of user with Mutation | GraphQL React Apollo Hooks 
 metaDescription: 'GraphQL Mutation to update last seen of user to make them available online. Use setInterval to trigger mutation every few seconds '
 ---
 
-import GithubLink from "../src/components/docParts/GithubLink.js";
+import GithubLink from "../src/components/docParts/GithubLink.tsx";
 
 We cruised through our GraphQL queries and mutations. We queried for todos, added a new todo, updated an existing todo, removed an existing todo.
 

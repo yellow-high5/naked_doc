@@ -2,8 +2,8 @@
 title: 'Landing Page'
 ---
 
-import YoutubeEmbed from "../src/components/docParts/YoutubeEmbed.js";
-import CommunityAuthor from "../src/components/docParts/CommunityAuthor.js";
+import YoutubeEmbed from "../src/components/docParts/YoutubeEmbed.tsx";
+import CommunityAuthor from "../src/components/docParts/CommunityAuthor.tsx";
 
 > Learn about GraphQL, how it works, and how to use it in this series of articles. Looking for documentation on how to build a GraphQL service? There are libraries to help you implement GraphQL in many different languages. For an in-depth learning experience with practical tutorials, visit the How to GraphQL fullstack tutorial website. We have also partnered with edX to create a free online course, Exploring GraphQL: A Query Language for APIs.
 

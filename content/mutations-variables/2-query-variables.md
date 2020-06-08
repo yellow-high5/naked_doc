@@ -4,7 +4,7 @@ metaTitle: 'Passing GraphQL Variables in Queries | GraphQL React Apollo Hooks Tu
 metaDescription: 'An Example of passing variables in GraphQL context and usage of Apollo GraphQL Mutation variables in React app.'
 ---
 
-import GithubLink from "../../src/components/docParts/GithubLink.js";
+import GithubLink from "../../src/components/docParts/GithubLink.tsx";
 
 ## What is a variable in GraphQL context?
 

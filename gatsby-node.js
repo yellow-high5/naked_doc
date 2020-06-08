@@ -4,7 +4,7 @@ const path = require('path');
 
 const startCase = require('lodash.startcase');
 
-const config = require('./config');
+const config = require('./config.ts');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
             path: node.fields.slug ? node.fields.slug : '/',
-            component: path.resolve('./src/templates/docs.js'),
+            component: path.resolve('./src/templates/docs.tsx'),
             context: {
               id: node.fields.id,
             },

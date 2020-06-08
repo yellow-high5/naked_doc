@@ -4,7 +4,7 @@ metaTitle: 'Apollo client.mutate for GraphQL mutation update | GraphQL React Apo
 metaDescription: 'We will use the Apollo useMutation React hook from @apollo/react-hooks as an example to modify existing data and update cache locally using readQuery and writeQuery and handle optimisticResponse'
 ---
 
-import GithubLink from "../../src/components/docParts/GithubLink.js";
+import GithubLink from "../../src/components/docParts/GithubLink.tsx";
 
 Now let's do the integration part. Open `src/components/Todo/TodoItem.js` and add the following code below the other imports:
 

@@ -4,7 +4,7 @@ metaTitle: 'Apollo Client GraphQL Setup | GraphQL React Apollo Hooks Tutorial'
 metaDescription: 'You will learn how to configure Apollo Client in React by installing dependencies like apollo-boost @apollo/react-hooks apollo-link-ws'
 ---
 
-import GithubLink from "../src/components/docParts/GithubLink.js";
+import GithubLink from "../src/components/docParts/GithubLink.tsx";
 
 Apollo gives a neat abstraction layer and an interface to your GraphQL server. You don't need to worry about constructing your queries with request body, headers and options, that you might have done with `axios` or `fetch` say. You can directly write queries and mutations in GraphQL and they will automatically be sent to your server via your apollo client instance.
 

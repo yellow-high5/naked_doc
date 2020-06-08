@@ -4,7 +4,7 @@ import React from 'react';
 import GitHubButton from 'react-github-btn';
 import Loadable from 'react-loadable';
 
-import config from '../../config.js';
+import config from '../../config.ts';
 import { DarkModeSwitch } from './DarkModeSwitch';
 import Link from './link';
 import LoadingProvider from './mdxComponents/loading';

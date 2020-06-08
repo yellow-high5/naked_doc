@@ -1,21 +1,13 @@
-import React, { useState, useEffect, createRef } from 'react';
-import {
-  InstantSearch,
-  Index,
-  Hits,
-  Configure,
-  Pagination,
-  connectStateResults,
-} from 'react-instantsearch-dom';
-import algoliasearch from 'algoliasearch/lite';
-import config from '../../../config.js';
-
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
-import { PoweredBy } from './styles';
+import algoliasearch from 'algoliasearch/lite';
+import React, { createRef, useEffect, useState } from 'react';
+import { Configure, connectStateResults, Hits, Index, InstantSearch } from 'react-instantsearch-dom';
 import { Search } from 'styled-icons/fa-solid/Search';
-import Input from './input';
+
+import config from '../../../config.ts';
 import * as hitComps from './hitComps';
+import Input from './input';
+import { PoweredBy } from './styles';
 
 const SearchIcon = styled(Search)`
   width: 1em;

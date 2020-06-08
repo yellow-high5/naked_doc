@@ -28,9 +28,9 @@ $ docker run -p 8080:8000 naked_doc:1.0
 ## 🔧Configure
 
 Naked Doc roughly consists of three elements, header, sidebar, content.  
-Edit the config.js file and it will be your favorite document in no time.
+Edit the config.ts file and it will be your favorite document in no time.
 
-![image](https://user-images.githubusercontent.com/14067398/83048486-9db16f80-a084-11ea-8b13-08a619456d3c.png)
+![image](https://user-images.githubusercontent.com/14067398/84039554-5c05ba80-a9dc-11ea-9cc7-d250791b9b9d.png)
 
 ### 1. Header
 
@@ -38,9 +38,9 @@ You can embed any social link in the document header. (ex: Github, Twitter...)
 
 #### Logo
 
-You edit `config.header.logo` in config.js
+You edit `config.header.logo` in config.ts
 
-If you want the link to be accessible when you click on the logo, you edit `config.header.logoLink` in config.js
+If you want the link to be accessible when you click on the logo, you edit `config.header.logoLink` in config.ts
 
 #### Search Engine([Algolia](https://www.algolia.com/))
 
@@ -63,7 +63,7 @@ If you want to create a section, create a folder in the `content` folder.
 
 ![image](https://user-images.githubusercontent.com/14067398/83247192-25f75800-a1de-11ea-9024-fafe4aa6c428.png)
 
-Naked Doc can access source repository link from document, so you edit `config.siteMetadata.docsLocation` in config.js.
+Naked Doc can access source repository link from document, so you edit `config.siteMetadata.docsLocation` in config.ts.
 
 #### React Component([MDX](https://mdxjs.com/))
 
