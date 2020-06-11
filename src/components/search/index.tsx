@@ -1,13 +1,7 @@
 import styled from '@emotion/styled';
 import algoliasearch from 'algoliasearch/lite';
 import React, { createRef, useEffect, useState } from 'react';
-import {
-  Configure,
-  connectStateResults,
-  Hits,
-  Index,
-  InstantSearch,
-} from 'react-instantsearch-dom';
+import { Configure, connectStateResults, Hits, Index, InstantSearch } from 'react-instantsearch-dom';
 import { Search } from 'styled-icons/fa-solid/Search';
 
 import config from '../../../config.ts';
@@ -101,8 +95,7 @@ const Results = connectStateResults(
 
 const useClickOutside = (ref, handler, events) => {
   if (!events) events = [`mousedown`, `touchstart`];
-  const detectClickOutside = event =>
-    ref && ref.current && !ref.current.contains(event.target) && handler();
+  const detectClickOutside = event => ref && handler();
 
   useEffect(() => {
     for (const event of events) document.addEventListener(event, detectClickOutside);
