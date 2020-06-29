@@ -75,6 +75,18 @@ You store the JSX component you want to insert in Markdown in `src/components/do
 
 You check [Deploying and Hosting | GatsbyJS](https://www.gatsbyjs.org/docs/deploying-and-hosting/)
 
+By default, it is set to deploy to Github pages.
+
+```sh
+$ npm run deploy
+```
+
+## PWA
+
+You can add this document to mobile home screen.
+
+![image](https://user-images.githubusercontent.com/14067398/86019345-707c2680-ba61-11ea-8497-a651a191109f.png)
+
 ## Thanks OSS and the Predecessor!
 
 - [GatsbyJS](https://www.gatsbyjs.org/)
