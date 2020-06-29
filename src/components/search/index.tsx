@@ -4,7 +4,7 @@ import React, { createRef, useEffect, useState } from 'react';
 import { Configure, connectStateResults, Hits, Index, InstantSearch } from 'react-instantsearch-dom';
 import { Search } from 'styled-icons/fa-solid/Search';
 
-import config from '../../../config.ts';
+import config from '../../../config';
 import * as hitComps from './hitComps';
 import Input from './input';
 import { PoweredBy } from './styles';
@@ -95,7 +95,8 @@ const Results = connectStateResults(
 
 const useClickOutside = (ref, handler, events) => {
   if (!events) events = [`mousedown`, `touchstart`];
-  const detectClickOutside = event => ref && handler();
+  const detectClickOutside = event =>
+    ref && ref.current && !ref.current.contains(event.target) && handler();
 
   useEffect(() => {
     for (const event of events) document.addEventListener(event, detectClickOutside);

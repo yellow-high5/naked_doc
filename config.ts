@@ -56,7 +56,7 @@ const config = {
       'https://raw.githubusercontent.com/yellow-high5/naked_doc/master/src/components/static/images/logo.svg',
   },
   pwa: {
-    enabled: false, // disabling this will also remove the existing service worker.
+    enabled: true,
     manifest: {
       name: 'Naked Doc | Simple documentation template',
       short_name: 'Naked Doc',
@@ -65,9 +65,10 @@ const config = {
       theme_color: '#001934',
       display: 'standalone',
       crossOrigin: 'use-credentials',
+      icon: 'src/components/static/images/pwa-512.png',
       icons: [
         {
-          src: 'src/components/images/pwa-512.png',
+          src: 'pwa-512.png',
           sizes: `512x512`,
           type: `image/png`,
         },
