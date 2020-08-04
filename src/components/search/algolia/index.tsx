@@ -4,7 +4,7 @@ import React, { createRef, useEffect, useState } from 'react';
 import { Configure, connectStateResults, Hits, Index, InstantSearch } from 'react-instantsearch-dom';
 import { Search } from 'styled-icons/fa-solid/Search';
 
-import config from '../../../config';
+import config from '../../../../config.ts';
 import * as hitComps from './hitComps';
 import Input from './input';
 import { PoweredBy } from './styles';

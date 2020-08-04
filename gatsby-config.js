@@ -52,7 +52,7 @@ const plugins = [
 // Algoliaの設定
 if (
   config.header.search &&
-  config.header.search.enabled &&
+  config.header.search.engine === 'algolia' &&
   config.header.search.algoliaAppId &&
   config.header.search.algoliaAdminKey
 ) {
@@ -63,6 +63,35 @@ if (
       apiKey: config.header.search.algoliaAdminKey, // algolia admin key to index
       queries,
       chunkSize: 10000, // default: 1000
+    },
+  });
+}
+// Lunrの設定
+if (config.header.search && config.header.search.engine === 'lunr') {
+  plugins.push({
+    resolve: `gatsby-plugin-lunr`,
+    options: {
+      languages: [
+        {
+          name: 'ja',
+        },
+      ],
+      fields: [
+        { name: 'slug', store: true },
+        { name: 'title', store: true },
+        { name: 'description', store: true },
+        { name: 'node', store: true },
+        { name: 'body' },
+      ],
+      resolvers: {
+        Mdx: {
+          slug: node => node.fields.slug,
+          title: node => node.frontmatter.title,
+          description: node => node.frontmatter.metaDescription,
+          body: node => node.rawBody,
+          node: node => node,
+        },
+      },
     },
   });
 }

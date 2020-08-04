@@ -12,7 +12,8 @@ import Sidebar from './sidebar';
 
 const help = require('./static/images/help.svg');
 
-const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
+const isSearchEnabled =
+  config.header.search && (config.header.search.engine === 'algolia' || 'lunr') ? true : false;
 
 let searchIndices = [];
 
@@ -25,7 +26,10 @@ if (isSearchEnabled && config.header.search.indexName) {
 }
 
 const LoadableComponent = Loadable({
-  loader: () => import('./search/index'),
+  loader:
+    config.header.search.engine === 'algolia'
+      ? () => import('./search/algolia/index')
+      : () => import('./search/lunr/searchBar'),
   loading: LoadingProvider,
 });
 

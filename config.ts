@@ -10,13 +10,15 @@ const config = {
       'https://github.com/yellow-high5/naked_doc/blob/master/src/components/static/images/header-logo.png?raw=true',
     logoLink: 'https://yellow-high5.github.io/naked_doc/',
     title: '',
-    githubUrl: 'https://github.com/yellow-high5/naked_doc',
+    githubUrl: '',
     helpUrl: '',
     social: ``,
     links: [{ text: '', link: '' }],
     search: {
-      enabled: true,
+      //enabled: true,
+      engine: 'lunr', // 'algolia' or 'lunr'
       indexName: 'INDEX_NAME',
+      // only use algolia search engine
       algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
       algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
       algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
