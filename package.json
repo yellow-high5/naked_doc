@@ -1,9 +1,19 @@
 {
   "name": "naked_doc",
-  "private": true,
+  "private": false,
   "description": "Simple documentation template",
   "author": "mush",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme",
+    "document"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yellow-high5/naked_doc.git"
+  },
   "dependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.7.4",
     "@emotion/core": "^10.0.22",

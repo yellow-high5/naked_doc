@@ -6,28 +6,25 @@ Let's create your document!
 
 ![nake_logo_header](https://user-images.githubusercontent.com/14067398/83019721-63cf7180-a062-11ea-894f-3c3e9c5a566f.png)
 
-↓Here is sample document about GraphQL
+↓Here is sample document
+
 https://yellow-high5.github.io/naked_doc/
 
-## 🚀QuickStart
+## How to Install
+
+```sh
+$ gatsby new [YOUR_DOCUMENT_NAME] https://github.com/yellow-high5/naked_doc
+```
 
 ### Local Development
 
 ```sh
-$ npm install
 $ npm run start
 ```
 
-### Using Docker Build
+## Configure
 
-```sh
-$ docker build . -t naked_doc:1.0
-$ docker run -p 8080:8000 naked_doc:1.0
-```
-
-## 🔧Configure
-
-Naked Doc roughly consists of three elements, header, sidebar, content.  
+Naked Doc consists of three elements, header, sidebar, content.  
 Edit the config.ts file and it will be your favorite document in no time.
 
 ![image](https://user-images.githubusercontent.com/14067398/84039554-5c05ba80-a9dc-11ea-9cc7-d250791b9b9d.png)
@@ -42,7 +39,17 @@ You edit `config.header.logo` in config.ts
 
 If you want the link to be accessible when you click on the logo, you edit `config.header.logoLink` in config.ts
 
-#### Search Engine([Algolia](https://www.algolia.com/))
+#### Search Engine
+
+##### [Lunr](https://lunrjs.com/)
+
+Recommended if you want to create an internal document.
+
+You just only edit `config.header.search`
+
+##### [Algolia](https://www.algolia.com/)
+
+Recommended if you want search performance. You must be registered for Algorlia in advance.
 
 You edit `config.header.search` and describe `.env` file about Algolia API Keys. You can get API Keys from Algolia Dashboard.
 
@@ -71,7 +78,7 @@ MDX is a great format to embed JSX in Markdown and makes the document richer
 
 You store the JSX component you want to insert in Markdown in `src/components/docParts` folder and import it with mdx to use it.
 
-## ⚡️Deploy
+## Deploy
 
 You check [Deploying and Hosting | GatsbyJS](https://www.gatsbyjs.org/docs/deploying-and-hosting/)
 

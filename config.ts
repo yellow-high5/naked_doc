@@ -24,6 +24,11 @@ const config = {
       algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
     },
   },
+  footer: {
+    background_color: '#04243c',
+    color: '#fff',
+    supporter: 'Naked Doc',
+  },
   sidebar: {
     forcedNavOrder: [
       '/introduction',

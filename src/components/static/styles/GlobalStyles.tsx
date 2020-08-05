@@ -217,9 +217,13 @@ export const baseStyles = injectGlobal`
   .hideResults {
     display: none;
   }
+  .hitWrapper h3 {
+    color: black;
+    font-size: 16px;
+  }
   .hitWrapper span {
     color: black;
-    font-size: 14px;
+    font-size: 12px;
   }
   .headerTitle {
     height: auto;
@@ -325,8 +329,8 @@ export const baseStyles = injectGlobal`
     color: rgb(116, 129, 141);
     margin: 0px 0px 24px;
     padding: 0px 0px 0px 12px;
-    border-left: 4px solid rgb(230, 236, 241);
-    border-color: rgb(230, 236, 241);
+    border-left: 4px solid rgb(116, 129, 141);
+    border-color: rgb(116, 129, 141);
   }
   .socialWrapper {
     display: flex;
@@ -399,6 +403,7 @@ export const baseStyles = injectGlobal`
 
   .sideBarUL {
     margin-top: 16px;
+    margin-bottom: 32px;
   }
 
   .sideBarUL li {
@@ -458,6 +463,10 @@ export const baseStyles = injectGlobal`
     width: 100%;
     padding-right: 35px;
     padding-left: 15px;
+  }
+
+  .sideBarUL .item > a > svg {
+    margin-right: 5px;
   }
 
   .showFrontLine .item > a:hover {
@@ -549,7 +558,9 @@ export const baseStyles = injectGlobal`
 
   /* tables.css */
   table {
+    margin: auto;
     padding: 0;
+    border-spacing: 0;
   }
 
   table tr {
@@ -563,8 +574,10 @@ export const baseStyles = injectGlobal`
   }
 
   table tr th {
+    background-color: rgb(116,129,141);
+    color: #f8f8f8;
     font-weight: bold;
-    border: 1px solid #cccccc;
+    border: 1px solid #f8f8f8;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
@@ -645,23 +658,25 @@ export const baseStyles = injectGlobal`
   }
 
   .heading1 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 800;
     line-height: 1.5;
+    border-left: 2px solid rgb(230,236,241);
+    padding: 0 12px;
     margin-bottom: 16px;
-    margin-top: 32px;
+    margin-top: 64px;
   }
 
   .heading2 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 16px;
-    margin-top: 32px;
+    margin-top: 48px;
   }
 
   .heading3 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 16px;
@@ -669,16 +684,16 @@ export const baseStyles = injectGlobal`
   }
 
   .heading4 {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 16px;
     margin-top: 32px;
   }
 
   .heading5 {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 16px;
     margin-top: 32px;
@@ -686,7 +701,7 @@ export const baseStyles = injectGlobal`
 
   .heading6 {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 16px;
     margin-top: 32px;
@@ -694,7 +709,12 @@ export const baseStyles = injectGlobal`
 
   .paragraph {
     margin: 16px 0px 32px;
-    line-height: 1.625;
+    line-height: 2.25;
+  }
+
+  .paragraph img {
+    width: 100%!important;
+    margin: 20px 0!important;
   }
 
   .pre {
@@ -707,6 +727,7 @@ export const baseStyles = injectGlobal`
   .poweredBy {
     font-size: 0.6em;
     text-align: end;
+    margin-top: 12px!important;
     padding: 0;
   }
   .topnav {

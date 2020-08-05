@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const StyledHeading = styled('h1')`
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.5;
   font-weight: 500;
   border-left: 2px solid #1ed3c6;
@@ -52,7 +52,7 @@ export const StyledMainWrapper = styled.div`
 
     li {
       font-size: 16px;
-      line-height: 1.8;
+      line-height: 2.25;
       font-weight: 400;
     }
   }
