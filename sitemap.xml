@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/intro-to-graphql</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/introduction</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/queries</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/apollo-client</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/mutations-variables</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/realtime-feed</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/setup</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/subscriptions/2-apollo-subscription</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/optimistic-update-mutations</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/subscriptions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/subscriptions/3-create-subscription</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/subscriptions/1-subscription</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/realtime-feed/1-fetch-public</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/realtime-feed/2-sync-todo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/queries/1-fetch-todos-query</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/queries/2-create-query</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/optimistic-update-mutations/1-update-todos</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/what-next</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/queries/3-handle-errors</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/optimistic-update-mutations/2-mutation-cache</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/optimistic-update-mutations/3.2-bulk-delete-mutation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/optimistic-update-mutations/3.1-mutation-update-cache</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/optimistic-update-mutations/3-remove-todos</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/optimistic-update-mutations/3.3-clear-completed</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/mutations-variables/2-query-variables</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/mutations-variables/1-create-todo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/mutations-variables/3-create-mutation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/intro-to-graphql/1-architecture</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/intro-to-graphql/2-fetching-data-queries</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/intro-to-graphql/3-writing-data-mutations</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/intro-to-graphql/4-watching-data-subscriptions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/architecture/1-preknowledge</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/architecture/2-install</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/management/1-writting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/management/2-deploy</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/architecture/3-setting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/architecture</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yellow-high5.github.io/naked_doc/naked_doc/management</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
