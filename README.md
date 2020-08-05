@@ -27,7 +27,7 @@ $ npm run start
 Naked Doc consists of three elements, header, sidebar, content.  
 Edit the config.ts file and it will be your favorite document in no time.
 
-![image](https://user-images.githubusercontent.com/14067398/84039554-5c05ba80-a9dc-11ea-9cc7-d250791b9b9d.png)
+![image](https://user-images.githubusercontent.com/14067398/89377395-a8dfe600-d72c-11ea-9ab3-c230ef288fb2.png)
 
 ### 1. Header
 
@@ -68,7 +68,7 @@ If you want to create a section, create a folder in the `content` folder.
 
 #### Edit this page
 
-![image](https://user-images.githubusercontent.com/14067398/83247192-25f75800-a1de-11ea-9024-fafe4aa6c428.png)
+![image](https://user-images.githubusercontent.com/14067398/89377395-a8dfe600-d72c-11ea-9ab3-c230ef288fb2.png)
 
 Naked Doc can access source repository link from document, so you edit `config.siteMetadata.docsLocation` in config.ts.
 

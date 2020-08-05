@@ -3,7 +3,7 @@ import React from 'react';
 const CommunityAuthor = ({ name, imageUrl, githubUrl, description }) => {
   return (
     <>
-      <p className="communitySection">Who is the author of this doc?</p>
+      <p className="communitySection">この記事を書いた人</p>
       <div className="authorSection">
         <div className="authorImg">
           <img src={imageUrl} alt={name} />
