@@ -92,7 +92,7 @@ $ npm run deploy
 
 You can add this document to mobile home screen.
 
-![image](https://user-images.githubusercontent.com/14067398/86019345-707c2680-ba61-11ea-8497-a651a191109f.png)
+![image](https://user-images.githubusercontent.com/14067398/89480198-b39f8700-d7cf-11ea-8c64-18c346b8ade6.png)
 
 ## Thanks OSS and the Predecessor!
 
