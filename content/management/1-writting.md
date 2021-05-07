@@ -42,11 +42,35 @@ Github の issue から画像リンクを生成する方法を推奨します。
 
 ## グラフや図の挿入
 
-Naked Docでは[mermaid](https://mermaid-js.github.io/mermaid/)というマークダウンでグラフや図を挿入する方法をサポートしています。
+Naked Docでは[mermaid](https://mermaid-js.github.io/mermaid/)を使用したマークダウンでグラフや図を挿入する方法をサポートしています。
+
+```
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+```
+  
+
+ ↓ 以下のように反映されます。 
 
 ```mermaid
-graph LR
-install[ Local]
-install --> configure[Github Repository]
-configure --> draw[Gihtub pages]
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
 ```
