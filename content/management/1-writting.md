@@ -38,3 +38,15 @@ metaDescription: '記事の説明'
 
 必要に応じて、ドキュメント内に画像を挿入する必要があるかと思います。  
 Github の issue から画像リンクを生成する方法を推奨します。
+
+
+## グラフや図の挿入
+
+Naked Docでは[mermaid](https://mermaid-js.github.io/mermaid/)というマークダウンでグラフや図を挿入する方法をサポートしています。
+
+```mermaid
+graph LR
+install[ Local]
+install --> configure[Github Repository]
+configure --> draw[Gihtub pages]
+```
